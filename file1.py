@@ -1,18 +1,9 @@
 import os
 
-fd = "myname.txt"
-fd2 = "printname.txt"
-file = open(fd, 'w')
-file.write("hello")
+fd = "xyz.txt"
+file = open(fd, 'a')
+file.write("new string \n")
 file.close()
 file = open(fd, 'r')
 text = file.read()
-
-file = open(fd2, 'w')
-file.write(text)
-file.close()
-file = open(fd, 'r')
-text2 = file.read()
-print(text2)
-
-
+print(text)
